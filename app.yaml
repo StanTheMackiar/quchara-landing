@@ -1,0 +1,11 @@
+runtime: nodejs18
+service: landing
+
+env_variables:
+  NODE_ENV: production
+  TZ: 'America/Bogota'
+
+handlers:
+  - url: /.*
+    script: auto
+    secure: always

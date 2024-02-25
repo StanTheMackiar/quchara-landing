@@ -1,6 +1,6 @@
+import { useResponsive } from "@/hooks";
 import Image from "next/image";
 import { QucharaLogo } from "../Icons";
-import { useResponsive } from "@/hooks";
 
 export const ContentHero = () => {
   const { isMobile } = useResponsive();
@@ -23,18 +23,22 @@ export const ContentHero = () => {
           Página web en construcción. Pronto estará disponible.
         </p>
         <div className="download-container flex gap-5 mt-2 md:mt-0">
-          <Image
-            src="/images/hero/download-ios.png"
-            alt="download icon"
-            width={isMobile ? 120 : 210}
-            height={isMobile ? 40 : 70}
-          />
-          <Image
-            src="/images/hero/download-android.png"
-            alt="download icon"
-            width={isMobile ? 120 : 210}
-            height={isMobile ? 40 : 70}
-          />
+          <a className="z-10" href="https://apps.apple.com/us/app/quchara/id6468960565">
+            <Image
+              src="/images/hero/download-ios.png"
+              alt="Descargar iOS"
+              width={isMobile ? 120 : 210}
+              height={isMobile ? 40 : 70}
+            />
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.qucharasas.quchara">
+            <Image
+              src="/images/hero/download-android.png"
+              alt="Descargar Android"
+              width={isMobile ? 120 : 210}
+              height={isMobile ? 40 : 70}
+            />
+          </a>
         </div>
       </div>
     </div>

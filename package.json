@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "npm run cleanup && next build",
+    "cleanup": "rm -rf .next && rm -rf build",
+    "deploy": "npm run build && gcloud app deploy",
     "dev": "next dev",
-    "build": "next build",
+    "lint": "next lint",
     "start": "next start",
-    "lint": "next lint"
+    "ts": "tsc --noEmit",
+    "type": "tsc --noEmit"
   },
   "dependencies": {
     "next": "14.1.0",
