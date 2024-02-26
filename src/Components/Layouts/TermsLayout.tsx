@@ -49,8 +49,8 @@ const TermsLayout = ({
         </Stack>
       </header>
 
-      <Box component='main' flex={1} mt={4} display="flex" className="ql-editor">
-        <Container className="overflow-hidden" component='article' maxWidth="lg">
+      <Box component='main' flex={1} mt={2} display="flex" justifyContent='center' className="ql-editor">
+        <Stack className="overflow-hidden" component='article' maxWidth={1440}>
           <Box
             display="flex"
             flexDirection="column"
@@ -61,12 +61,12 @@ const TermsLayout = ({
               className="text-primary text-center mb-1"
               variant={isMobile ? "h5" : "h4"}
             >
-              Quchara - {title}
+              {title}
             </Typography>
           </Box>
 
           <Box className="font-sfPro" component='section' height='100%' overflow='hidden'>{children}</Box>
-        </Container>
+        </Stack>
       </Box>
 
       <Stack
