@@ -14,14 +14,9 @@ const TermsLayout = ({
   title: string;
 }>) => {
   const { isMobile } = useResponsive();
-  console.log({ title });
+
   return (
-    <Box
-      height="100vh"
-      display="flex"
-      flexDirection="column"
-      className="font-sfPro ql-editor "
-    >
+    <>
       <header>
         <Stack
           position="sticky"
@@ -54,23 +49,23 @@ const TermsLayout = ({
         </Stack>
       </header>
 
-      <Box flex={1} mt={4} display="flex" className="ql-editor">
-        <Container maxWidth="lg">
+      <Box component='main' flex={1} mt={4} display="flex" className="ql-editor">
+        <Container className="overflow-hidden" component='article' maxWidth="lg">
           <Box
             display="flex"
             flexDirection="column"
             justifyContent="center"
-            alignItems="center"
+            component='section'
           >
             <Typography
-              className="text-primary mb-1"
+              className="text-primary text-center mb-1"
               variant={isMobile ? "h5" : "h4"}
             >
               Quchara - {title}
             </Typography>
           </Box>
 
-          <Box mt={3}>{children}</Box>
+          <Box className="font-sfPro" component='section' height='100%' overflow='hidden'>{children}</Box>
         </Container>
       </Box>
 
@@ -111,7 +106,7 @@ const TermsLayout = ({
           </Stack>
         </Container>
       </Stack>
-    </Box>
+    </>
   );
 };
 
