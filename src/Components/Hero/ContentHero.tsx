@@ -1,3 +1,4 @@
+import { APP_STORE_URL, PLAY_STORE_URL } from "@/helpers/const/url";
 import { useResponsive } from "@/hooks";
 import Image from "next/image";
 import { QucharaLogo } from "../Icons";
@@ -28,7 +29,7 @@ export const ContentHero = () => {
         <div className="download-container flex gap-5 mt-2 md:mt-0">
           <a
             className="z-10"
-            href="https://apps.apple.com/us/app/quchara/id6468960565"
+            href={APP_STORE_URL}
           >
             <Image
               src="/images/hero/download-ios.png"
@@ -37,7 +38,7 @@ export const ContentHero = () => {
               height={isMobile ? 40 : 70}
             />
           </a>
-          <a href="https://play.google.com/store/apps/details?id=com.qucharasas.quchara">
+          <a href={PLAY_STORE_URL}>
             <Image
               src="/images/hero/download-android.png"
               alt="Descargar Android"

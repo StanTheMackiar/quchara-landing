@@ -1,4 +1,5 @@
 "use client";
+
 import TermsLayout from "@/Components/Layouts/TermsLayout";
 import { getDocument } from "@/helpers/server/serverHelper";
 import { TermsConditions } from "@/interfaces/editor";

@@ -106,7 +106,7 @@ const TermsLayout = ({
               variant={isMobile ? "caption" : "body1"}
               className="text-orange-500 mb-1 font-semibold"
             >
-              Quchara S.A.S. 2023, Todos los derechos reservados
+              Quchara S.A.S. 2024, Todos los derechos reservados
             </Typography>
           </Stack>
         </Container>
