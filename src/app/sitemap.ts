@@ -20,5 +20,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.5,
     },
+    {
+      url: 'https://quchara.com/descargar',
+      lastModified: new Date(),
+      priority: 0.4,
+    },
   ]
 }
