@@ -11,14 +11,18 @@ const config: Config = {
       center: true,
     },
     extend: {
+      colors: {
+        primary: '#FF6C0A'
+      },
       backgroundImage: {
-        hero: 'url("/hero-img.svg")'
+        hero: 'url("/hero-img.svg")',
       },
       padding: {
-        108: '108px'
-      }, fontFamily: {
-        sfPro: ['var(--sf-pro)']
-      }
+        108: "108px",
+      },
+      fontFamily: {
+        sfPro: ["var(--sf-pro)"],
+      },
     },
   },
   plugins: [],
