@@ -1,31 +1,11 @@
 "use client";
-import { APP_STORE_URL, PLAY_STORE_URL } from "@/helpers/const/url";
 import { useResponsive } from "@/hooks";
 import Image from "next/image";
-import { redirect, useSearchParams } from "next/navigation";
-import { useEffect } from "react";
 import { ContentHero } from "./ContentHero";
 
 const Hero = () => {
-  const { get } = useSearchParams()
-
- useEffect(() => {
-  const redirecToStore = get('descargar')
-
-  if(redirecToStore !== '1') return
-
-  const userAgent = navigator.userAgent
-
-    if (userAgent.match(/Android/i)) {
-      redirect(PLAY_STORE_URL)
-    } else if (userAgent.match(/iPhone|iPad|iPod/i)) {
-      redirect(APP_STORE_URL)
-    } else {
-      redirect('/')
-    }
- }, [get]);
-
   const { isMobile } = useResponsive();
+  
   return (
     <section className="flex flex-col md:flex-row gap-4 md:gap-0 w-screen bg-hero bg-no-repeat bg-cover relative overflow-hidden">
       <Image

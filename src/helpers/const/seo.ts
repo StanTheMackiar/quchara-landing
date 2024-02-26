@@ -7,6 +7,10 @@ const SEO_IMAGE_URL = 'https://firebasestorage.googleapis.com/v0/b/quchara-ed80e
 
 const SEO: Metadata = {
   title: SEO_TITLE,
+  metadataBase: new URL('https://quchara.com'),
+  alternates: {
+    canonical: '/',
+  },
   description: SEO_DESCRIPTION,
   category: 'Restaurante',
   keywords: ['Quchara', 'Comida', 'Puntualidad', 'Restaurante', 'Bebida', 'Domicilio', 'Puntualidad', 'Cuchara', 'Almuerzo'],
@@ -14,6 +18,7 @@ const SEO: Metadata = {
     title: SEO_TITLE,
     card: 'summary_large_image',
     site: SEO_TITLE,
+    images: SEO_IMAGE_URL,
   },
   robots: "index, follow",
   authors: {
