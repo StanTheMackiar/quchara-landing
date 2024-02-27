@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { SITE_URL } from "../env";
 
 const SEO_TITLE = 'Quchara - Almuerzos a tiempo'
-const SEO_DESCRIPTION = "Programa tus almuerzos de la semana y recíbelos a una hora exacta."
+const SEO_DESCRIPTION = "Programa tus almuerzos y recíbelos a una hora exacta. Si llegamos tarde, te pagamos."
 const SEO_IMAGE_URL = 'https://firebasestorage.googleapis.com/v0/b/quchara-ed80e.appspot.com/o/Quchara%2Ficon_orange.png?alt=media&token=2f30d087-4b86-42b9-8b95-73f843d764e5'
 
 const SEO: Metadata = {

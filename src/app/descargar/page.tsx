@@ -5,7 +5,7 @@ import { headers } from "next/headers";
 import { RedirectType, redirect } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: 'Descarga la App',
+  title: 'Descarga la App Quchara',
   description: 'Este enlace dectectara el SO de tu dispositivo móvil y te va a redirigir a la tienda correspondiente'
 }
 
@@ -27,7 +27,7 @@ const page = async () => {
 
   await redirecToStore()
 
-   return null
+  return null
 }
 
 export default page
