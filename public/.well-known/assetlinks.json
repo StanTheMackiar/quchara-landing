@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.qucharasas.quchara",
+      "sha256_cert_fingerprints": [
+        "D9:80:69:BA:D7:96:57:00:D4:5F:48:FC:F1:00:63:4B:78:0D:22:4D:59:E1:48:FD:B2:21:27:46:EF:BD:71:0C"
+      ]
+    }
+  }
+]
