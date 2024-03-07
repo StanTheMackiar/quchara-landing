@@ -34,6 +34,7 @@ export const ContentHero = () => {
             <Image
               src="/images/hero/download-ios.png"
               alt="Descargar iOS"
+              className="aspect-[26/9]"
               width={isMobile ? 120 : 210}
               height={isMobile ? 40 : 70}
             />
@@ -42,6 +43,7 @@ export const ContentHero = () => {
             <Image
               src="/images/hero/download-android.png"
               alt="Descargar Android"
+              className="aspect-[26/9]"
               width={isMobile ? 120 : 210}
               height={isMobile ? 40 : 70}
             />
