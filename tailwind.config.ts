@@ -17,6 +17,9 @@ const config: Config = {
       backgroundImage: {
         hero: 'url("/hero-img.svg")',
       },
+      maxWidth: {
+        "mw-container": "1440px",
+      },
       padding: {
         108: "108px",
       },
